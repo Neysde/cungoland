@@ -85,7 +85,7 @@ new Chart("cfChart", {
   }
 });
 
-var dateTryValues = [26.07,27.07,28.07,29.07,30.07,31.07,1.08,2.08,3.08,4.08];
+var dateTryValues = [26.07,27.07,28.07,29.07,30.07,31.07,1.08,2.08,3.08,4.08,5.08];
 
 new Chart("cfChart2", {
   type: "line",

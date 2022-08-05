@@ -10910,3 +10910,8 @@ a, a:hover, a:focus, a:active {
   font-size: 18px;
   font-family: Helvetica;
 }
+
+.cungoland-flag {
+  width: 10%;
+  float: right;
+}
