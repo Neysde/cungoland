@@ -16,7 +16,7 @@ $(function() {
           items: 1
         },
         320: {
-          items: 1
+          items: 1 
         }
       }
     });

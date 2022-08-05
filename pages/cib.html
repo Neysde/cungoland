@@ -17,12 +17,23 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="demo.js"></script>
+
+    
     <!-- endinject -->
+
+    <script>
+
+      $(function(){
+        $('#header2').load('/cungoland/pages/header.html');  
+        $('#footer2').load('/cungoland/pages/footer.html');
+      });
+
+    </script>
 
     <style>
       .wiki-title {
         color: white;
-        font-size: 18px;
+        font-size: 18px; 
         margin-top: 10px;
         float: left;
       }  
@@ -41,69 +52,7 @@
 
   <body>
     <div class="container-scroller">
-      <header id="header">
-        <div class="container">
-          <!-- partial:partials/_navbar.html -->
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="d-flex justify-content-between align-items-center navbar-top">
-              
-              <div>
-                <a class="navbar-brand" href="#"><h1 class="font-weight-bold">Çüngoland</h1></a>
-              </div>
-              
-            </div>
-            <div class="navbar-bottom-menu">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-              <div
-                class="navbar-collapse justify-content-center collapse"
-                id="navbarSupportedContent"
-              >
-                <ul
-                  class="navbar-nav d-lg-flex justify-content-between align-items-center"
-                >
-                  
-                  <li class="nav-item active">
-                    <a class="nav-link active" href="index.html">Ana Sayfa</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/cungoland/cib">ÇIB</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/cungoland/ubc">UBÇ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/cungoland/cungogazete.html">Çüngo Gazete</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/cungoland/cungotwitter">ÇüngoTwitter</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/cungoland/cungostats">Çüngo Stats</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/cungoland/pictures">Ülkeden Fotoğraflar</a>
-                  </li>
-                  
-                  
-                  
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-          <!-- partial -->
-        </div>
-      </header>
+      <div id="header2"></div>
     </div>
     <div class="container">
       <div class="row">
@@ -216,39 +165,7 @@ Diğer bir solcu siyasetçi olan Ahmet Kıraç 1992 Şubatında öldürülmüşt
     </div>
     <!-- container-scroller ends -->
     <!-- partial:../partials/_footer.html -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="border-top"></div>
-          </div>
-          
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="d-flex justify-content-between">
-              <div>
-                <a class="navbar-brand" href="#"><h1 class="font-weight-bold">Çüngoland</h1></a>
-              </div>
-    
-              
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="d-lg-flex justify-content-between align-items-center border-top mt-5 footer-bottom">
-              
-              
-              <p class="font-weight-medium">
-                 Cungoburg Government All Rights Reserved.
-              </p>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div id="footer2"></div>
 
     <!-- partial -->
     <!-- inject:js -->
