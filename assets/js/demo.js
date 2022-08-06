@@ -102,3 +102,131 @@ new Chart("cfChart2", {
     legend: {display: false}
   }
 });
+
+var popNameValues = ["Çüngolu", "Türk", "Arap", "Alman", "Diğer"];
+var popPercentageValues = [83, 6, 5, 5, 1];
+var barColors = [
+  "#000000",
+  "#FF0000",
+  "#2b5797",
+  "#e8c3b9",
+  "#1e7145"
+];
+
+new Chart("cungoPopulationChart", {
+  type: "pie",
+  data: {
+    labels: popNameValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: popPercentageValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Çüngoland Nüfus"
+    }
+  }
+});
+
+var popEthnicNameValues = ["Alman", "Türk", "Norveçli", "Flemenk", "Diğer"];
+var popEthnicPercentageValues = [44, 26, 17, 3, 10];
+var barColors = [
+  "#FF8A00",
+  "#FF0000",
+  "#004DFF",
+  "#00D8FF",
+  "#1e7145"
+];
+
+new Chart("cungoEthnicPopulationChart", {
+  type: "pie",
+  data: {
+    labels: popEthnicNameValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: popEthnicPercentageValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Çüngoland Etnik Nüfus"
+    }
+  }
+});
+
+var popReligionValues = ["Protestan", "Dinsiz", "Müslüman", "Katolik", "Diğer"];
+var popReligionPercentageValues = [44, 26, 17, 3, 10];
+var barColors = [
+  "#FF0000",
+  "#000000",
+  "#9EFF00",
+  "#000EFF",
+  "#1e7145"
+];
+
+new Chart("cungoReligionChart", {
+  type: "pie",
+  data: {
+    labels: popReligionValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: popReligionPercentageValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Çüngoland Dini Dağılım"
+    }
+  }
+});
+
+var refugeeValues = ["Suriyeli", "Afgan", "Pakistanlı", "Kuzey Afrikalı"];
+var refugeeNumberValues = [36500, 18300, 300, 2500];
+var barColors = ["red", "brown","green","orange"];
+
+new Chart("refugeeChart", {
+  type: "bar",
+  data: {
+    labels: refugeeValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: refugeeNumberValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Çüngoland Mülteci Sayısı"
+    }
+  }
+});
+
+var sectorValues = ["Hizmet", "Tarım", "Sanayi"];
+var sectorPercentageValues = [68, 8, 24];
+var barColors = [
+  "#FF8A00",
+  "#00FF20",
+  "#426969",
+];
+
+new Chart("cungoSectorChart", {
+  type: "pie",
+  data: {
+    labels: sectorValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: sectorPercentageValues
+    }]
+  },
+  options: {
+    title: {
+      display: true,
+      text: "Çüngoland Sektör Dağılımı"
+    }
+  }
+});

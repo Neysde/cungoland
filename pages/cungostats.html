@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Çüngoland</title>
+    <!-- plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <!-- End plugin css for this page -->
+    <link rel="shortcut icon" href="../assets/images/favicon.png" />
+    <!-- inject:css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="demo.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- endinject -->
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script> 
+    <script>
+
+      $(function(){
+        $('#header2').load('/cungoland/pages/header.html');  
+        $('#footer2').load('/cungoland/pages/footer.html');
+      });
+
+    </script>
+
+    
+
+    <style>
+      .wiki-title {
+        color: white;
+        font-size: 18px;
+        margin-top: 10px;
+        float: left;
+      }  
+
+      .wiki-text {
+        color: white;
+        font-size: 18px;
+        margin-top: 10px;
+        float: right;
+      }
+
+    
+      
+    
+    </style>
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <div id="header2"></div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="news-post-wrapper">
+            <div class="news-post-wrapper-sm ">
+              <h1 class="text-center font-weight-600">
+                Çüngoland Stats
+              </h1>
+              
+              
+              
+              <p class="pt-4 pb-4 mb-4">
+                <strong>Nüfus:</strong> 10.750.000<br>
+                <strong>Başkent:</strong> Çüngoburg<br>
+                <strong>Nüfus Yoğunluğu:</strong> 142.67/km²<br>
+                <strong>Yüzölçümü:</strong> 75.345 km²<br>
+                <strong>GSYİH:</strong> 770 milyar USD (22.)<br>
+                <strong>Kişi Başına GSYİH:</strong> 71.627 USD (5.)<br>
+                <strong>Nüfus:</strong> %83 Çüngolu %6 Türk %5 Arap %5 Alman %1 Diğer…<br>
+                <canvas id="cungoPopulationChart" style="width:100%;max-width:600px;"></canvas>
+                <strong>Etnik Nüfus:</strong> %44 Alman %26 Türk %17 Norveçli %3 Flemenk  %10 Diğer…<br>
+                <canvas id="cungoEthnicPopulationChart" style="width:100%;max-width:600px"></canvas>
+                <strong>Büyük Çüngüş:</strong> qq<br>
+                <strong>Din:</strong> %35 Protestan %38 Dinsiz %20 Müslüman %4 Katolik %6 Diğer<br>
+                <canvas id="cungoReligionChart" style="width:100%;max-width:600px"></canvas>
+                <strong>Para Birimi:</strong> Çüngoland Floppası (CF)<br>
+                <strong>Asgari Ücret:</strong> 3600<i class="fa-solid fa-arrow-right"></i>4537 CF (avg) 4200<i class="fa-solid fa-arrow-right"></i>5250 for Çüngoburg<br>
+                <strong>Mülteci Sayısı:</strong> 36.500 Suriyeli, 18.300 Afgan, 300 Pakistanlı, 2500 Kuzey Afrikalı<br>
+                <canvas id="refugeeChart" style="width:100%;max-width:600px"></canvas>
+                <strong>Yaşam Kalitesi Skoru:</strong> 250 (6.)<br>
+                <strong>Yaşam Maliyeti Skoru:</strong> 97.0 (Çüngoburg) Av: 71.2<br>
+                <strong>Vatandaş Olmak İçin Gereken Yatırım Miktarı:</strong> 1.000.000 Euro<br>
+                <strong>Vatandaş Olmak İçin Gereken Dil Seviyesi:</strong> B2 Almanca<br>
+                <strong>Eğitim Seviyesi Puanı:</strong> 2450 (12.)<br>
+                <strong>Sektör Oranı:</strong> %68 Hizmet %8 Tarım %24 Sanayi<br>
+                <canvas id="cungoSectorChart" style="width:100%;max-width:600px"></canvas>
+
+                <strong>İşsizlik Oranı:</strong> %3.4<br>
+                <strong>Enflasyon:</strong> % 6.40<br>
+                <strong>Faiz Oranı:</strong> % 0.15<br>
+
+              </p>
+
+              <hr style="height:1px;border:none;color:gray;background-color:gray;">
+
+            </div>
+
+            <div class="news-post-wrapper-sm ">
+                <h3 class="font-weight-bold">
+                  Çüngoland Sosyal Devlet İstatistikleri
+                </h3>
+                
+                
+                
+                <p class="pt-4 pb-4 mb-4">
+                    <strong>Muayene Ücreti:</strong> 75100 CF<br>
+                    <strong>İlaç Ücreti:</strong>  İşsiz ve Emekliye %50 indirim.<br>
+                    <strong>Öğrenciye Aylık Durumuna Göre:</strong>  50-150<i class="fa-solid fa-arrow-right"></i>75-200 CF <br>
+                    <strong>Çalışamayan Anne Ücreti (aylık):</strong>  500-850<i class="fa-solid fa-arrow-right"></i>700-1150 CF<br>
+                    <strong>Çalışamayan Baba Ücreti (aylık):</strong>  500-850<i class="fa-solid fa-arrow-right"></i>700-1150 CF<br>
+                    <strong>Yeni Doğan Bebek İçin Aylık (ilk 6 ay):</strong>  600<i class="fa-solid fa-arrow-right"></i>875 CF<br>
+                    <strong>Okullardaki Eğitim:</strong>  Bedava<br>
+                    <strong>Durumu Kötü Olanlara Okul Araç Gereçleri İçin (aylık):</strong>  50<i class="fa-solid fa-arrow-right"></i>75 CF<br>
+                    <strong>Engelli Maaşı(aylık):</strong> 1500-3500<i class="fa-solid fa-arrow-right"></i>2200-5000 CF<br>
+                    <strong>Gazi Maaşı(aylık):</strong>  1500<i class="fa-solid fa-arrow-right"></i>2200 CF<br>
+                    <strong>Şehit Ailesi İçin(aylık):</strong>  4000<i class="fa-solid fa-arrow-right"></i>6000 CF<br>
+                    <strong>Öğrenciler İçin Sosyal, Sportif, Sanatsal Harcama Desteği(aylık):</strong>  200<i class="fa-solid fa-arrow-right"></i>300 CF<br>
+                    <strong>Tarım Araçları ve Yakıtları İçin Destek(aylık):</strong>  Yakıt için %0.5 , Devamlılık sözüne bağlı olarak Araç Maliyetinin %10’u<br>
+                    <strong> Hayvancılık İçin Yem (ilk 2 yıl):</strong>  %70 indirimli<br>
+                    <strong> Sonraki 3 yıl:</strong>  %40 indirimli<br>
+                    <strong> Sonraki 5 yıl:</strong> %20 indirimli.<br>
+                    <strong>Asgari ücretliye Kira, elektrik, su, doğalgaz ve internet paketi için</strong> aylık 500<i class="fa-solid fa-arrow-right"></i>700 CF<br>
+                    <strong> KDV:</strong>  %1 <br>
+                    <strong>  Gelir vergisi:</strong>  Asgari ücretliye %1, aylık 12000 CF üzerine %2, aylık 19000 üzerine %3<br>
+
+                </p>
+                
+  
+                  
+  
+                <hr style="height:1px;border:none;color:gray;background-color:gray;">
+                  
+  
+              
+            </div>
+
+            <div class="news-post-wrapper-sm ">
+                <h3 class="font-weight-bold">
+                  Çüngoland Şehirler
+                </h3>
+                
+                
+                
+                
+                    
+                  
+                
+  
+                  
+  
+                  
+                  
+  
+              
+              </div>
+
+            
+
+            
+
+            
+
+            
+
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- container-scroller ends -->
+    <!-- partial:../partials/_footer.html -->
+    <div id="footer2"></div>
+
+    <!-- partial -->
+    <!-- inject:js -->
+    <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="../assets/js/demo.js"></script>
+    <!-- End custom js for this page-->
+  </body>
+</html>
